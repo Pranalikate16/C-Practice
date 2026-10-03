@@ -1,0 +1,132 @@
+﻿#region List<T>
+
+//List<int> numbers = new List<int>();
+//numbers.Add(10);
+//numbers.Add(20);
+//numbers.Add(30);
+
+//Console.WriteLine($"number of items : {numbers.Count}");
+
+//Console.WriteLine("**** All ITEMS ***");
+//foreach (int i in numbers)
+//{
+//    Console.Write($"{i}\t");
+//}
+//Console.WriteLine();
+
+//numbers.Add(40);
+//Console.WriteLine($"number of items After Add(40) : {numbers.Count}");
+
+//Console.WriteLine("*** All Items after Add(40) ***");
+
+//foreach (int i in numbers)
+//{
+//    Console.Write($"{i} \t");
+//}
+//Console.WriteLine();
+
+//IEnumerable<int> temp = new List<int>() { 50, 60, 70, };
+
+////numbers.AddRange(temp);
+
+//numbers.Remove(50);
+
+//numbers.RemoveAt(1);
+
+
+#endregion List<T>
+
+#region Dictionary<>
+
+//Dictionary<int, string> students = new Dictionary<int, string>();
+//students.Add(1, "Amit");
+//students.Add(2,"sanket");
+//students.Add(3, "ankita");
+
+//Console.WriteLine($"number of items : {students.Count}");
+
+//Console.WriteLine("*** ALL ITEMS ***");
+
+//foreach (KeyValuePair<int,string> student in students)
+//{
+//    Console.WriteLine($"Key : {student.Key} value : {student.Value}");
+
+
+
+//}
+////lookup feature
+
+//string name = students[2];
+//Console.WriteLine($"value at key 2 : {name}");
+
+//if (!students.ContainsKey(3))
+//{
+//    students.Add(3, "Anita");
+//}
+//else
+//{
+//    Console.WriteLine("Student is already added with same key 3");
+//}
+
+
+
+
+
+
+
+
+
+#endregion Dictionary<>
+
+#region Stack<T>
+
+//stack is generic 
+
+//Stack<string> history = new Stack<string>();
+
+//history.Push("google.com");
+//history.Push("google.com/search/csharp");
+//history.Push("csharpcorner.com");
+
+//Console.WriteLine($"number of sites in stack : {history.Count}");
+
+//  string site = history.Pop();//returns and removes item from stack
+//Console.WriteLine(site);
+
+//site = history.Peek(); // returns item without removing it
+//Console.WriteLine(site);
+
+//Console.WriteLine();
+
+
+
+
+
+#endregion stack<T>
+
+#region Queue<T>
+
+Queue<string> row = new Queue<string>();
+row.Enqueue("avinash");
+row.Enqueue("vishwajeet");
+row.Enqueue("anita");
+
+Console.WriteLine($"number of persons in row : {row.Count}");
+
+string person = row.Dequeue();
+Console.WriteLine($"serving : {person} ");
+
+Console.WriteLine($"number of persons in row : {row.Count}");
+
+person = row.Peek();
+Console.WriteLine($"numbers of persons in row : {row.Count}");
+
+
+
+
+
+
+
+#endregion Queue<T>
+
+Console.ReadLine();
